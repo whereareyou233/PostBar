@@ -1,2 +1,5 @@
+include ':communication'
+include ':home'
+include ':User'
 include ':app'
 rootProject.name = "PostBar"

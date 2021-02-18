@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_postbar"
+        android:checked="true"
+        android:title="首页"
+        android:icon="@drawable/search_buttom"/>
+    <item
+        android:id="@+id/community_postbar"
+        android:checked="true"
+        android:title="资讯"
+        android:icon="@drawable/community_buttom"/>
+    <item
+        android:id="@+id/user_postbar"
+        android:checked="true"
+        android:title="我"
+        android:icon="@drawable/user_buttom"/>
+
+
+</menu>
