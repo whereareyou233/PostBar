@@ -34,6 +34,9 @@ class LaunchActivity : AppCompatActivity() {
         updateHandler.sendEmptyMessageDelayed(1, 3000)
 
         jump_pb.setOnClickListener {
+            if (updateHandler != null) {
+                updateHandler.removeCallbacksAndMessages(null);
+            }
             val intent=Intent(this,MainActivity::class.java)
             this.startActivity(intent)
             finish()

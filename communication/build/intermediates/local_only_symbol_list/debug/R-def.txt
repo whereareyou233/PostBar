@@ -1,3 +1,18 @@
 R_DEF: Internal format may change without notice
 local
+drawable search
+drawable test1
+drawable test2
+drawable test3
+id image_community
+id image_info_content
+id info_text
+id info_title
+id m1
+id recyclerview_community
+id text_community
+id toolbar_info_content
+layout activity_info_content
 layout communication_fragment
+layout item_recycler_community
+style InfoContentActivity

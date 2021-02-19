@@ -10,4 +10,14 @@
 9        android:targetSdkVersion="30" />
 9-->D:\MyAndroidProjects\PostBar\communication\src\main\AndroidManifest.xml
 10
-11</manifest>
+11    <application>
+11-->D:\MyAndroidProjects\PostBar\communication\src\main\AndroidManifest.xml:5:5-8:19
+12        <activity
+12-->D:\MyAndroidProjects\PostBar\communication\src\main\AndroidManifest.xml:6:9-7:67
+13            android:name="com.example.communication.activity.InfoContentActivity"
+13-->D:\MyAndroidProjects\PostBar\communication\src\main\AndroidManifest.xml:6:19-63
+14            android:theme="@style/InfoContentActivity" />
+14-->D:\MyAndroidProjects\PostBar\communication\src\main\AndroidManifest.xml:7:13-55
+15    </application>
+16
+17</manifest>

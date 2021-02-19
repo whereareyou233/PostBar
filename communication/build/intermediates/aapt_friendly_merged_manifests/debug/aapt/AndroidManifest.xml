@@ -8,4 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="30" />
 
+    <application>
+        <activity
+            android:name="com.example.communication.activity.InfoContentActivity"
+            android:theme="@style/InfoContentActivity" />
+    </application>
+
 </manifest>

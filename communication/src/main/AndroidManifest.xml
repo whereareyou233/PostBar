@@ -2,4 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.communication">
 
+    <application>
+        <activity android:name=".activity.InfoContentActivity"
+            android:theme="@style/InfoContentActivity"></activity>
+    </application>
+
 </manifest>
