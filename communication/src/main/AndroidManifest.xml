@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.communication">
+    package="com.example.communication" >
 
     <application>
-        <activity android:name=".activity.InfoContentActivity"
-            android:theme="@style/InfoContentActivity"></activity>
+        <activity android:name=".activity.SearchActivity" >
+        </activity>
+        <activity
+            android:name=".activity.InfoContentActivity"
+            android:theme="@style/InfoContentActivity" />
     </application>
 
 </manifest>

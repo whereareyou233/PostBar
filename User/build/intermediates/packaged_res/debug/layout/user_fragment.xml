@@ -3,14 +3,231 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_light_background"
     tools:context=".Fragment.UserFragment">
 
-    <TextView
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+<!-- 导航栏 -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="right"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cardview_light_background"
+        android:src="@drawable/setting1"
+        />
+</LinearLayout>
+       <!-- 导航栏结束 -->
+
+       <!-- 头像 id  个性签名 -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="100dp">
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E91E63"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:text="敬请期待" />
+        android:src="@drawable/head"
+        android:scaleType="centerCrop"
+        />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小小邮"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每一张邮票都有它的故事"
+        android:layout_gravity="center"/>
+</LinearLayout>
+       <!-- 头像 id 个性签名结束-->
+
+       <!-- 展示集邮数量模块-->
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_margin="20dp"
+
+           app:cardCornerRadius="25dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/cardview_light_background"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textColor="@color/cardview_light_background"
+            android:gravity="center"
+            android:text="我的邮集"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:text="0"
+            android:textColor="@color/cardview_light_background"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textColor="@color/cardview_light_background"
+            android:gravity="center"
+            android:text="我的邮票"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="我的收藏"/>
+    </LinearLayout>
+</LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <!-- 展示集邮数量模块结束-->
+
+
+       <!-- 各模块入口按钮 -->
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+
+           android:layout_marginTop="30dp"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3"
+                   android:src="@drawable/collection"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:text="我的收藏"
+                   android:gravity="center"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3"
+                   android:src="@drawable/play"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:text="我的制作"
+                   android:gravity="center"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3"
+                   android:src="@drawable/post" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:text="我的邮集"
+                   android:gravity="center"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3"
+                   android:src="@drawable/works"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:text="我的工具"
+                   android:gravity="center"/>
+           </LinearLayout>
+       </LinearLayout>
+
+       <!-- 各模块入口按钮结束 -->
+
+   </LinearLayout>
 
 </FrameLayout>

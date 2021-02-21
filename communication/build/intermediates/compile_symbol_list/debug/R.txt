@@ -1336,6 +1336,7 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
+int drawable delete 0x0
 int drawable design_bottom_navigation_item_background 0x0
 int drawable design_fab_background 0x0
 int drawable design_ic_visibility 0x0
@@ -1375,6 +1376,7 @@ int drawable notification_template_icon_bg 0x0
 int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
+int drawable return123 0x0
 int drawable search 0x0
 int drawable test1 0x0
 int drawable test2 0x0
@@ -1445,6 +1447,9 @@ int id async 0x0
 int id auto 0x0
 int id blocking 0x0
 int id bottom 0x0
+int id bt_delete 0x0
+int id bt_return 0x0
+int id bt_search 0x0
 int id buttonPanel 0x0
 int id cancel_action 0x0
 int id cancel_button 0x0
@@ -1559,7 +1564,9 @@ int id pin 0x0
 int id progress_circular 0x0
 int id progress_horizontal 0x0
 int id radio 0x0
+int id recycler_search 0x0
 int id recyclerview_community 0x0
+int id recyler_searchhistory 0x0
 int id right 0x0
 int id right_icon 0x0
 int id right_side 0x0
@@ -1576,6 +1583,8 @@ int id search_badge 0x0
 int id search_bar 0x0
 int id search_button 0x0
 int id search_close_btn 0x0
+int id search_community 0x0
+int id search_content 0x0
 int id search_edit_frame 0x0
 int id search_go_btn 0x0
 int id search_mag_icon 0x0
@@ -1704,6 +1713,7 @@ int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
 int layout activity_info_content 0x0
+int layout activity_search 0x0
 int layout communication_fragment 0x0
 int layout custom_dialog 0x0
 int layout design_bottom_navigation_item 0x0

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.communication.VM.CommunicationViewModel
 import com.example.communication.R
 import com.example.communication.activity.InfoContentActivity
+import com.example.communication.activity.SearchActivity
 import com.example.communication.adapter.RecyclerviewCommunity
 import com.example.communication.model.RealTimeInfo
 import kotlinx.android.synthetic.main.communication_fragment.*
@@ -54,7 +55,12 @@ class CommunicationFragment : Fragment() {
         recyclerview_community.adapter=adapter
 
 
-        //
+        //设置点击事件
+        search_community.setOnClickListener {
+            val intent=Intent(context,SearchActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context?.startActivity(intent)
+        }
 
     }
 

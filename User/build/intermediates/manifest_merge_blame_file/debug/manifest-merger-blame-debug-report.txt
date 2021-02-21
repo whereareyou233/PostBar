@@ -10,4 +10,14 @@
 9        android:targetSdkVersion="30" />
 9-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 10
-11</manifest>
+11    <application>
+11-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:5:5-8:19
+12        <activity android:name="com.example.user.activity.PersonalInformationActivity" />
+12-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:9-83
+12-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:19-71
+13        <activity android:name="com.example.user.activity.SettingsActivity" />
+13-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:9-63
+13-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:19-60
+14    </application>
+15
+16</manifest>

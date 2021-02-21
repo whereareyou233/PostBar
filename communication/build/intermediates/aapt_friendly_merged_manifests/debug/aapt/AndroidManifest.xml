@@ -9,6 +9,8 @@
         android:targetSdkVersion="30" />
 
     <application>
+        <activity android:name="com.example.communication.activity.SearchActivity" >
+        </activity>
         <activity
             android:name="com.example.communication.activity.InfoContentActivity"
             android:theme="@style/InfoContentActivity" />

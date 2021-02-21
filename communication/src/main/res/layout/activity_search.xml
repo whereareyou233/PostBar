@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+   >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/bt_return"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return123"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="15dp">
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2E4E1E1"
+            android:textSize="15dp"
+            android:hint="搜索圈内资讯"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/bt_search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#673AB7"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 热门搜索  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="热门搜索"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="大前门"
+                    android:background="#F2E4E1E1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="邮票发展历史"
+                    android:background="#F2E4E1E1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:text="抗战胜利纪念邮票"
+                    android:background="#F2E4E1E1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="纪念毛泽东一百诞辰系列"
+                android:background="#F2E4E1E1"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- 热门搜索结束  -->
+
+            <!--搜索历史  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="搜索历史"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:gravity="center|left"/>
+                <ImageButton
+                    android:id="@+id/bt_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/delete"
+                    android:background="@color/cardview_light_background"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler_searchhistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <!--搜索历史结束  -->
+        <!--搜索结果展示  -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:background="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--搜索结果展示 结束 -->
+    </RelativeLayout>
+
+
+
+  </LinearLayout>
