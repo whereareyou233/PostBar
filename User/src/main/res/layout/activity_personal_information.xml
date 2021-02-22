@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     android:orientation="vertical"
    >
     <!-- 导航栏 -->
@@ -61,6 +62,7 @@
         android:background="#F2E4E1E1"
         android:layout_height="1dp"/>
     <LinearLayout
+        android:id="@+id/bt_name"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
@@ -73,6 +75,7 @@
             android:gravity="center"
             android:layout_marginLeft="10dp"/>
         <TextView
+            android:id="@+id/name_user"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -95,6 +98,7 @@
         android:background="#F2E4E1E1"
         android:layout_height="1dp"/>
     <LinearLayout
+        android:id="@+id/bt_signature"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -106,6 +110,7 @@
             android:gravity="center"
             android:layout_marginLeft="10dp"/>
         <TextView
+            android:id="@+id/signature_user"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"

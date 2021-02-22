@@ -1378,9 +1378,15 @@ int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
 int drawable return123 0x0
 int drawable search 0x0
+int drawable test0 0x0
 int drawable test1 0x0
+int drawable test15 0x0
 int drawable test2 0x0
 int drawable test3 0x0
+int drawable test5 0x0
+int drawable test59 0x0
+int drawable test7 0x0
+int drawable test9 0x0
 int drawable test_custom_background 0x0
 int drawable tooltip_frame_dark 0x0
 int drawable tooltip_frame_light 0x0

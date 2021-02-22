@@ -39,11 +39,11 @@ class CommunicationFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(CommunicationViewModel::class.java)
 
-        InfoList.add(RealTimeInfo(R.drawable.test1,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的精品中的精品"))
-        InfoList.add(RealTimeInfo(R.drawable.test2,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
-        InfoList.add(RealTimeInfo(R.drawable.test2,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
-        InfoList.add(RealTimeInfo(R.drawable.test3,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
-        InfoList.add(RealTimeInfo(R.drawable.test3,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
+        InfoList.add(RealTimeInfo(R.drawable.test9,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的精品中的精品"))
+        InfoList.add(RealTimeInfo(R.drawable.test5,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
+        InfoList.add(RealTimeInfo(R.drawable.test0,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
+        InfoList.add(RealTimeInfo(R.drawable.test59,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
+        InfoList.add(RealTimeInfo(R.drawable.test7,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
         InfoList.add(RealTimeInfo(R.drawable.test1,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
         InfoList.add(RealTimeInfo(R.drawable.test2,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
 

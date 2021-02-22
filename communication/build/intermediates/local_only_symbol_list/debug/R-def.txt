@@ -3,9 +3,15 @@ local
 drawable delete
 drawable return123
 drawable search
+drawable test0
 drawable test1
+drawable test15
 drawable test2
 drawable test3
+drawable test5
+drawable test59
+drawable test7
+drawable test9
 id bt_delete
 id bt_return
 id bt_search

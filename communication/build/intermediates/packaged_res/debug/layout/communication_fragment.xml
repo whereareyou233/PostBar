@@ -15,6 +15,7 @@
            android:layout_width="match_parent"
            android:layout_height="40dp"
            app:cardCornerRadius="15sp"
+           android:layout_marginTop="10dp"
            android:layout_marginLeft="15dp"
            android:layout_marginRight="15dp"
            >
@@ -35,20 +36,44 @@
            android:hint="搜索圈内资讯"
            android:gravity="center|left"/></LinearLayout>
        </androidx.cardview.widget.CardView>
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="160dp"
+           android:layout_margin="20dp"
+           app:cardCornerRadius="15dp">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/test15"
+    android:scaleType="centerCrop"/>
+       </androidx.cardview.widget.CardView>
+
        <TextView
            android:id="@+id/m1"
            android:layout_width="match_parent"
            android:layout_height="50dp"
            android:text="热门资讯"
            android:textColor="@color/cardview_dark_background"
-           android:textSize="22sp"
+           android:textSize="20sp"
            android:layout_marginLeft="5dp"
            android:gravity="center|left"/>
        <androidx.recyclerview.widget.RecyclerView
            android:id="@+id/recyclerview_community"
            android:layout_width="match_parent"
-           android:layout_height="match_parent"/>
-
+           android:layout_height="match_parent"
+           android:nestedScrollingEnabled="false"/>
+           </LinearLayout>
+       </androidx.core.widget.NestedScrollView>
    </LinearLayout>
 
 </FrameLayout>

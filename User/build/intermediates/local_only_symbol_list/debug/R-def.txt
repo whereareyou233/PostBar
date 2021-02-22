@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim dialog_in_anim
+anim dialog_out_anim
 drawable collection
 drawable head
 drawable into
@@ -8,11 +10,25 @@ drawable post
 drawable return2
 drawable setting1
 drawable works
+id bt_name
 id bt_return_information
 id bt_return_settings
+id bt_signature
+id cancel_name
+id cancel_signature
+id confirm_name
+id confirm_signature
+id edit_name
+id edit_signature
 id into_infomation
+id name_user
 id setting
+id signature_user
 layout activity_personal_information
 layout activity_settings
+layout dialog_name_user
+layout dialog_signature_user
 layout user_fragment
+style DialogTheme
 style SettingsActivityTheme
+style main_menu_animStyle

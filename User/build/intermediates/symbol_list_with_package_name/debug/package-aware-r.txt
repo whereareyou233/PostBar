@@ -27,6 +27,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim dialog_in_anim
+anim dialog_out_anim
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -1450,11 +1452,15 @@ id async
 id auto
 id blocking
 id bottom
+id bt_name
 id bt_return_information
 id bt_return_settings
+id bt_signature
 id buttonPanel
 id cancel_action
 id cancel_button
+id cancel_name
+id cancel_signature
 id center
 id checkbox
 id checked
@@ -1463,6 +1469,8 @@ id chip_group
 id chronometer
 id clear_text
 id confirm_button
+id confirm_name
+id confirm_signature
 id container
 id content
 id contentPanel
@@ -1480,7 +1488,9 @@ id design_menu_item_text
 id design_navigation_view
 id dialog_button
 id dropdown_menu
+id edit_name
 id edit_query
+id edit_signature
 id end
 id end_padder
 id expand_activities_button
@@ -1542,6 +1552,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name_user
 id navigation_header_container
 id none
 id normal
@@ -1588,6 +1599,7 @@ id select_dialog_listview
 id selected
 id setting
 id shortcut
+id signature_user
 id slide
 id smallLabel
 id snackbar_action
@@ -1722,6 +1734,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_name_user
+layout dialog_signature_user
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2083,6 +2097,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogTheme
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -2540,6 +2555,7 @@ style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_Support_CoordinatorLayout
+style main_menu_animStyle
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
