@@ -20,9 +20,10 @@
     android:orientation="horizontal">
     <ImageButton
         android:id="@+id/setting"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_gravity="center"
         android:background="@color/cardview_light_background"
         android:src="@drawable/setting1"
         />
@@ -42,6 +43,7 @@
         android:layout_marginTop="10dp"
         app:cardCornerRadius="100dp">
     <ImageView
+        android:id="@+id/head_user_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/head"

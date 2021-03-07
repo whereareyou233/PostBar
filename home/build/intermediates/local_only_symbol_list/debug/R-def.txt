@@ -1,3 +1,23 @@
 R_DEF: Internal format may change without notice
 local
+drawable add
+drawable camare
+drawable head1
+drawable materail
+drawable play3
+drawable recommend
+drawable return12
+drawable return121
+drawable story
+drawable testbg
+id bt_material
+id bt_openphoto
+id bt_play
+id return_material
+id return_play
+id save_play
+layout activity_material
+layout activity_play
 layout home_fragment
+style MaterialActicityTheme
+style PlayActivityTheme

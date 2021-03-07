@@ -31,7 +31,7 @@
             android:id="@+id/search_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F2E4E1E1"
+            android:background="#1a673AB7"
             android:textSize="15dp"
             android:hint="搜索圈内资讯"/>
         </androidx.cardview.widget.CardView>

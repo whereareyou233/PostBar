@@ -76,6 +76,8 @@ viewpager_pb.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
 
     }
 })
+
         //
     }
+
 }

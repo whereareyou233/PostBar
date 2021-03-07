@@ -8,4 +8,16 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="com.example.home.activity.MaterialActivity"
+            android:theme="@style/MaterialActicityTheme" />
+        <activity
+            android:name="com.example.home.activity.PlayActivity"
+            android:theme="@style/PlayActivityTheme" />
+    </application>
+
 </manifest>

@@ -10,17 +10,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.communication.VM.CommunicationViewModel
 import com.example.communication.R
 import com.example.communication.activity.InfoContentActivity
 import com.example.communication.activity.SearchActivity
+import com.example.communication.adapter.ImageAdapter
 import com.example.communication.adapter.RecyclerviewCommunity
+import com.example.communication.adapter.RecyclerviewTow
 import com.example.communication.model.RealTimeInfo
+import com.youth.banner.adapter.BannerImageAdapter
+import com.youth.banner.indicator.CircleIndicator
 import kotlinx.android.synthetic.main.communication_fragment.*
 
 class CommunicationFragment : Fragment() {
     val InfoList=ArrayList<RealTimeInfo>()
+    val ImageList =ArrayList<Int>()
+    val InfoListTwo =ArrayList<RealTimeInfo>()
 
     companion object {
         fun newInstance() = CommunicationFragment()
@@ -39,8 +46,20 @@ class CommunicationFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(CommunicationViewModel::class.java)
 
-        InfoList.add(RealTimeInfo(R.drawable.test9,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的精品中的精品"))
-        InfoList.add(RealTimeInfo(R.drawable.test5,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
+
+        ImageList.add(R.drawable.test15)
+        ImageList.add(R.drawable.test16)
+        ImageList.add(R.drawable.test17)
+        ImageList.add(R.drawable.test18)
+
+
+        InfoListTwo.add(RealTimeInfo(R.drawable.sucai,"Today is a good day"))
+        InfoListTwo.add(RealTimeInfo(R.drawable.sucai1,"Today is a good day"))
+        InfoListTwo.add(RealTimeInfo(R.drawable.sucai2,"Today is a good day"))
+        InfoListTwo.add(RealTimeInfo(R.drawable.sucai3,"Today is a good day"))
+
+        InfoList.add(RealTimeInfo(R.drawable.test0,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的精品中的精品"))
+        InfoList.add(RealTimeInfo(R.drawable.test18,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
         InfoList.add(RealTimeInfo(R.drawable.test0,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
         InfoList.add(RealTimeInfo(R.drawable.test59,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
         InfoList.add(RealTimeInfo(R.drawable.test7,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
@@ -48,7 +67,24 @@ class CommunicationFragment : Fragment() {
         InfoList.add(RealTimeInfo(R.drawable.test2,"邮票从清朝发行至今，无论是从哪一方面都是独一无二的"))
 
 
-        //设置Recyclerview
+
+        //设置轮播图
+
+          banner.addBannerLifecycleObserver(this)//添加生命周期观察者
+                        .setAdapter(ImageAdapter(ImageList))
+              .setBannerGalleryEffect(60,60,15)     //画廊效果
+                        .setIndicator( CircleIndicator(context));      //设置指示器
+
+
+        //设置横向Recyclerview
+        val layoutManagerTow =LinearLayoutManager(context)
+        layoutManagerTow.orientation=LinearLayoutManager.HORIZONTAL
+        recyclerview_community_tow.layoutManager=layoutManagerTow
+        val adaptertow= context?.let { RecyclerviewTow(it,InfoListTwo)}
+        recyclerview_community_tow.adapter=adaptertow
+
+
+        //设置推荐Recyclerview
         val layoutManager =StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
         recyclerview_community.layoutManager=layoutManager
         val adapter= context?.let { RecyclerviewCommunity(it,InfoList) }

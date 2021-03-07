@@ -10,6 +10,7 @@ drawable post
 drawable return2
 drawable setting1
 drawable works
+id bt_head
 id bt_name
 id bt_return_information
 id bt_return_settings
@@ -20,6 +21,8 @@ id confirm_name
 id confirm_signature
 id edit_name
 id edit_signature
+id head_user
+id head_user_fragment
 id into_infomation
 id name_user
 id setting
