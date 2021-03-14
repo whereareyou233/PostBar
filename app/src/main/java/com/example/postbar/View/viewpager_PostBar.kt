@@ -15,12 +15,16 @@ class viewpager_PostBar : ViewPager {
         val context = mContext
     }
 
-    override fun onTouchEvent(arg0: MotionEvent?): Boolean {
+
+    //viewpager滑动切换开关
+    //开启 返回ture
+    //关闭 返回false
+  /*  override fun onTouchEvent(arg0: MotionEvent?): Boolean {
         return false
     }
 
     override fun onInterceptTouchEvent(arg0: MotionEvent?): Boolean {
         return  false
-    }
+    }*/
 
 }

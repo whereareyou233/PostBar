@@ -14,15 +14,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
 import com.bumptech.glide.Glide
 import com.example.home.VM.HomeViewModel
 import com.example.home.R
 import com.example.home.Util.GlideEngine
-import com.example.home.activity.MaterialActivity
-import com.example.home.activity.PlayActivity
+import com.example.home.activity.*
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.config.PictureMimeType
 import kotlinx.android.synthetic.main.home_fragment.*
+import kotlinx.android.synthetic.main.home_fragment.view.*
 import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
 import java.io.FileInputStream
@@ -51,7 +52,25 @@ class HomeFragment : Fragment() {
 
 
         //点击事件
+        bt_add.setOnClickListener {
+            val intent=Intent(context,AddSelectActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context?.startActivity(intent)
+        }
+        bt_story.setOnClickListener {
+            val intent=Intent(context,StoryActivity::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context?.startActivity(intent)
+        }
+
+      bt_edit_home.setOnClickListener {
+          val intent =Intent(context,SearchHomeActivity::class.java)
+          intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+          context?.startActivity(intent)
+      }
+
         bt_openphoto.setOnClickListener { openPhoto() }
+
         bt_play.setOnClickListener {
             val intent = Intent(context, PlayActivity::class.java)
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

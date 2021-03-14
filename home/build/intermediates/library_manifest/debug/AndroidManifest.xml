@@ -13,6 +13,15 @@
 
     <application>
         <activity
+            android:name="com.example.home.activity.AddSelectActivity"
+            android:theme="@style/AddSelectActivityTheme" />
+        <activity
+            android:name="com.example.home.activity.StoryActivity"
+            android:theme="@style/StoryActivityTheme" />
+        <activity
+            android:name="com.example.home.activity.SearchHomeActivity"
+            android:theme="@style/SearchHomeActivityTheme" />
+        <activity
             android:name="com.example.home.activity.MaterialActivity"
             android:theme="@style/MaterialActicityTheme" />
         <activity

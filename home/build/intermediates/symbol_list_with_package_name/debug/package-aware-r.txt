@@ -1504,6 +1504,8 @@ drawable abc_vector_test
 drawable add
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg
+drawable bg_add
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1513,6 +1515,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable camare
+drawable delete
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1639,6 +1642,8 @@ drawable recommend
 drawable return12
 drawable return121
 drawable story
+drawable sucaih
+drawable sucaih2
 drawable test_custom_background
 drawable testbg
 drawable tooltip_frame_dark
@@ -1667,6 +1672,7 @@ drawable ucrop_vector_loader_animated
 drawable ucrop_wrapper_controls_shape
 id BOTTOM_END
 id BOTTOM_START
+id Nosearch
 id TOP_END
 id TOP_START
 id accessibility_action_clickable_span
@@ -1731,9 +1737,19 @@ id blocking
 id bottom
 id bottomLine
 id bottom_line
+id bt_add
+id bt_edit_home
+id bt_edit_search
 id bt_material
+id bt_new
+id bt_old
 id bt_openphoto
 id bt_play
+id bt_return_add
+id bt_return_search_home
+id bt_return_story
+id bt_search_home
+id bt_story
 id btnCheck
 id btnOk
 id btn_cancel
@@ -1808,6 +1824,7 @@ id icon_group
 id id_recycler
 id image
 id image_flash
+id image_home_story
 id image_preview
 id image_switch
 id image_view_crop
@@ -1816,6 +1833,7 @@ id image_view_state_aspect_ratio
 id image_view_state_rotate
 id image_view_state_scale
 id info
+id insearch
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1907,6 +1925,7 @@ id preview_pager
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerview_home_story
 id return_material
 id return_play
 id right
@@ -1978,6 +1997,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id text_home_story
 id text_input_end_icon
 id text_input_start_icon
 id text_view_crop
@@ -2110,8 +2130,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_select
 layout activity_material
 layout activity_play
+layout activity_search_home
+layout activity_story
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2129,6 +2152,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout home_fragment
+layout item_story_horizontal
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2386,6 +2410,7 @@ string ucrop_menu_crop
 string ucrop_mutate_exception_hint
 string ucrop_rotate
 string ucrop_scale
+style AddSelectActivityTheme
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2657,6 +2682,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Query
 style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SearchHomeActivityTheme
 style ShapeAppearanceOverlay
 style ShapeAppearanceOverlay_BottomLeftDifferentCornerSize
 style ShapeAppearanceOverlay_BottomRightCut
@@ -2677,6 +2703,7 @@ style ShapeAppearance_MaterialComponents_LargeComponent
 style ShapeAppearance_MaterialComponents_MediumComponent
 style ShapeAppearance_MaterialComponents_SmallComponent
 style ShapeAppearance_MaterialComponents_Test
+style StoryActivityTheme
 style TestStyleWithLineHeight
 style TestStyleWithLineHeightAppearance
 style TestStyleWithThemeLineHeightAttribute

@@ -1505,6 +1505,8 @@ int drawable abc_vector_test 0x0
 int drawable add 0x0
 int drawable avd_hide_password 0x0
 int drawable avd_show_password 0x0
+int drawable bg 0x0
+int drawable bg_add 0x0
 int drawable btn_checkbox_checked_mtrl 0x0
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x0
 int drawable btn_checkbox_unchecked_mtrl 0x0
@@ -1515,6 +1517,7 @@ int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
 int drawable camare 0x0
 int drawable collection 0x0
+int drawable delete 0x0
 int drawable design_bottom_navigation_item_background 0x0
 int drawable design_fab_background 0x0
 int drawable design_ic_visibility 0x0
@@ -1647,6 +1650,8 @@ int drawable return121 0x0
 int drawable return2 0x0
 int drawable setting1 0x0
 int drawable story 0x0
+int drawable sucaih 0x0
+int drawable sucaih2 0x0
 int drawable test_custom_background 0x0
 int drawable testbg 0x0
 int drawable tooltip_frame_dark 0x0
@@ -1676,6 +1681,7 @@ int drawable ucrop_wrapper_controls_shape 0x0
 int drawable works 0x0
 int id BOTTOM_END 0x0
 int id BOTTOM_START 0x0
+int id Nosearch 0x0
 int id TOP_END 0x0
 int id TOP_START 0x0
 int id accessibility_action_clickable_span 0x0
@@ -1740,14 +1746,24 @@ int id blocking 0x0
 int id bottom 0x0
 int id bottomLine 0x0
 int id bottom_line 0x0
+int id bt_add 0x0
+int id bt_edit_home 0x0
+int id bt_edit_search 0x0
 int id bt_head 0x0
 int id bt_material 0x0
 int id bt_name 0x0
+int id bt_new 0x0
+int id bt_old 0x0
 int id bt_openphoto 0x0
 int id bt_play 0x0
+int id bt_return_add 0x0
 int id bt_return_information 0x0
+int id bt_return_search_home 0x0
 int id bt_return_settings 0x0
+int id bt_return_story 0x0
+int id bt_search_home 0x0
 int id bt_signature 0x0
+int id bt_story 0x0
 int id btnCheck 0x0
 int id btnOk 0x0
 int id btn_cancel 0x0
@@ -1830,6 +1846,7 @@ int id icon_group 0x0
 int id id_recycler 0x0
 int id image 0x0
 int id image_flash 0x0
+int id image_home_story 0x0
 int id image_preview 0x0
 int id image_switch 0x0
 int id image_view_crop 0x0
@@ -1838,6 +1855,7 @@ int id image_view_state_aspect_ratio 0x0
 int id image_view_state_rotate 0x0
 int id image_view_state_scale 0x0
 int id info 0x0
+int id insearch 0x0
 int id into_infomation 0x0
 int id invisible 0x0
 int id italic 0x0
@@ -1931,6 +1949,7 @@ int id preview_pager 0x0
 int id progress_circular 0x0
 int id progress_horizontal 0x0
 int id radio 0x0
+int id recyclerview_home_story 0x0
 int id return_material 0x0
 int id return_play 0x0
 int id right 0x0
@@ -2004,6 +2023,7 @@ int id text 0x0
 int id text2 0x0
 int id textSpacerNoButtons 0x0
 int id textSpacerNoTitle 0x0
+int id text_home_story 0x0
 int id text_input_end_icon 0x0
 int id text_input_start_icon 0x0
 int id text_view_crop 0x0
@@ -2136,10 +2156,13 @@ int layout abc_search_dropdown_item_icons_2line 0x0
 int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
+int layout activity_add_select 0x0
 int layout activity_material 0x0
 int layout activity_personal_information 0x0
 int layout activity_play 0x0
+int layout activity_search_home 0x0
 int layout activity_settings 0x0
+int layout activity_story 0x0
 int layout custom_dialog 0x0
 int layout design_bottom_navigation_item 0x0
 int layout design_bottom_sheet_dialog 0x0
@@ -2159,6 +2182,7 @@ int layout design_text_input_start_icon 0x0
 int layout dialog_name_user 0x0
 int layout dialog_signature_user 0x0
 int layout home_fragment 0x0
+int layout item_story_horizontal 0x0
 int layout mtrl_alert_dialog 0x0
 int layout mtrl_alert_dialog_actions 0x0
 int layout mtrl_alert_dialog_title 0x0
@@ -2417,6 +2441,7 @@ int string ucrop_menu_crop 0x0
 int string ucrop_mutate_exception_hint 0x0
 int string ucrop_rotate 0x0
 int string ucrop_scale 0x0
+int style AddSelectActivityTheme 0x0
 int style AlertDialog_AppCompat 0x0
 int style AlertDialog_AppCompat_Light 0x0
 int style Animation_AppCompat_Dialog 0x0
@@ -2689,6 +2714,7 @@ int style RtlOverlay_Widget_AppCompat_Search_DropDown_Query 0x0
 int style RtlOverlay_Widget_AppCompat_Search_DropDown_Text 0x0
 int style RtlUnderlay_Widget_AppCompat_ActionButton 0x0
 int style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow 0x0
+int style SearchHomeActivityTheme 0x0
 int style SettingsActivityTheme 0x0
 int style ShapeAppearanceOverlay 0x0
 int style ShapeAppearanceOverlay_BottomLeftDifferentCornerSize 0x0
@@ -2710,6 +2736,7 @@ int style ShapeAppearance_MaterialComponents_LargeComponent 0x0
 int style ShapeAppearance_MaterialComponents_MediumComponent 0x0
 int style ShapeAppearance_MaterialComponents_SmallComponent 0x0
 int style ShapeAppearance_MaterialComponents_Test 0x0
+int style StoryActivityTheme 0x0
 int style TestStyleWithLineHeight 0x0
 int style TestStyleWithLineHeightAppearance 0x0
 int style TestStyleWithThemeLineHeightAttribute 0x0

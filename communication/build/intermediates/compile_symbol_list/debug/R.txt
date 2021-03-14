@@ -1344,6 +1344,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x0
 int drawable abc_textfield_search_default_mtrl_alpha 0x0
 int drawable abc_textfield_search_material 0x0
 int drawable abc_vector_test 0x0
+int drawable approval 0x0
 int drawable avd_hide_password 0x0
 int drawable avd_show_password 0x0
 int drawable btn_checkbox_checked_mtrl 0x0
@@ -1397,6 +1398,7 @@ int drawable notify_panel_notification_icon_bg 0x0
 int drawable recommend 0x0
 int drawable return123 0x0
 int drawable search 0x0
+int drawable shouchang 0x0
 int drawable sucai 0x0
 int drawable sucai1 0x0
 int drawable sucai2 0x0
@@ -1478,7 +1480,6 @@ int id add 0x0
 int id alertTitle 0x0
 int id async 0x0
 int id auto 0x0
-int id banner 0x0
 int id blocking 0x0
 int id bottom 0x0
 int id bt_delete 0x0
@@ -1602,7 +1603,6 @@ int id progress_horizontal 0x0
 int id radio 0x0
 int id recycler_search 0x0
 int id recyclerview_community 0x0
-int id recyclerview_community_tow 0x0
 int id recyler_searchhistory 0x0
 int id right 0x0
 int id right_icon 0x0

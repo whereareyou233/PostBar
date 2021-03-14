@@ -1345,6 +1345,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable approval
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1398,6 +1399,7 @@ drawable notify_panel_notification_icon_bg
 drawable recommend
 drawable return123
 drawable search
+drawable shouchang
 drawable sucai
 drawable sucai1
 drawable sucai2
@@ -1479,7 +1481,6 @@ id add
 id alertTitle
 id async
 id auto
-id banner
 id blocking
 id bottom
 id bt_delete
@@ -1603,7 +1604,6 @@ id progress_horizontal
 id radio
 id recycler_search
 id recyclerview_community
-id recyclerview_community_tow
 id recyler_searchhistory
 id right
 id right_icon

@@ -1,9 +1,11 @@
 R_DEF: Internal format may change without notice
 local
+drawable approval
 drawable delete
 drawable recommend
 drawable return123
 drawable search
+drawable shouchang
 drawable sucai
 drawable sucai1
 drawable sucai2
@@ -21,7 +23,6 @@ drawable test5
 drawable test59
 drawable test7
 drawable test9
-id banner
 id bt_delete
 id bt_return
 id bt_search
@@ -33,7 +34,6 @@ id info_title
 id m1
 id recycler_search
 id recyclerview_community
-id recyclerview_community_tow
 id recyler_searchhistory
 id search_community
 id search_content
