@@ -16,39 +16,42 @@
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 12-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:6:5-81
 12-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:6:22-78
-13
-14    <application>
-14-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:8:5-23:19
-15        <activity
-15-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:9:9-10:70
-16            android:name="com.example.home.activity.AddSelectActivity"
-16-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:9:19-61
-17            android:theme="@style/AddSelectActivityTheme" />
-17-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:10:13-58
-18        <activity
-18-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:11:9-13:57
-19            android:name="com.example.home.activity.StoryActivity"
-19-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:12:13-51
-20            android:theme="@style/StoryActivityTheme" />
-20-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:13:13-54
-21        <activity
-21-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:14:9-16:62
-22            android:name="com.example.home.activity.SearchHomeActivity"
-22-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:15:13-56
-23            android:theme="@style/SearchHomeActivityTheme" />
-23-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:16:13-59
-24        <activity
-24-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:17:9-19:60
-25            android:name="com.example.home.activity.MaterialActivity"
-25-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:18:13-54
-26            android:theme="@style/MaterialActicityTheme" />
-26-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:19:13-57
-27        <activity
-27-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:20:9-22:56
-28            android:name="com.example.home.activity.PlayActivity"
-28-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:21:13-50
-29            android:theme="@style/PlayActivityTheme" />
-29-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:22:13-53
-30    </application>
-31
-32</manifest>
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:7:5-66
+13-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:7:22-64
+14
+15    <application>
+15-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:10:5-27:19
+16        <activity
+16-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:12:9-14:61
+17            android:name="com.example.home.activity.AddSelectActivity"
+17-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:13:13-55
+18            android:theme="@style/AddSelectActivityTheme" />
+18-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:14:13-58
+19        <activity
+19-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:15:9-17:57
+20            android:name="com.example.home.activity.StoryActivity"
+20-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:16:13-51
+21            android:theme="@style/StoryActivityTheme" />
+21-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:17:13-54
+22        <activity
+22-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:18:9-20:62
+23            android:name="com.example.home.activity.SearchHomeActivity"
+23-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:19:13-56
+24            android:theme="@style/SearchHomeActivityTheme" />
+24-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:20:13-59
+25        <activity
+25-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:21:9-23:60
+26            android:name="com.example.home.activity.MaterialActivity"
+26-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:22:13-54
+27            android:theme="@style/MaterialActicityTheme" />
+27-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:23:13-57
+28        <activity
+28-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:24:9-26:56
+29            android:name="com.example.home.activity.PlayActivity"
+29-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:25:13-50
+30            android:theme="@style/PlayActivityTheme" />
+30-->D:\MyAndroidProjects\PostBar\home\src\main\AndroidManifest.xml:26:13-53
+31    </application>
+32
+33</manifest>

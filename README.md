@@ -11,3 +11,5 @@
 ## 资讯模块 |communication
 
 ## 功能模块 | home
+
+## 通用模块 | common

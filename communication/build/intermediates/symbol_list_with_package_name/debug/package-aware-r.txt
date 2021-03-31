@@ -1397,6 +1397,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable recommend
+drawable return122
 drawable return123
 drawable search
 drawable shouchang
@@ -1673,6 +1674,7 @@ id textinput_helper_text
 id time
 id title
 id titleDividerNoCustom
+id title_collection
 id title_template
 id toolbar_info_content
 id top
@@ -1752,7 +1754,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_collection
 layout activity_info_content
+layout activity_post_info
 layout activity_search
 layout communication_fragment
 layout custom_dialog

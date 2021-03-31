@@ -3,7 +3,12 @@
     package="com.example.user">
 
     <application>
-        <activity android:name=".activity.PersonalInformationActivity"></activity>
+        <activity android:name=".activity.PlayColletionActivity"
+            android:theme="@style/FavoritesActivityTheme"></activity>
+        <activity
+            android:name=".activity.FavoritesActivity"
+            android:theme="@style/FavoritesActivityTheme" />
+        <activity android:name=".activity.PersonalInformationActivity" />
         <activity android:name=".activity.SettingsActivity" />
     </application>
 

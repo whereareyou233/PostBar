@@ -1396,6 +1396,7 @@ int drawable notification_template_icon_low_bg 0x0
 int drawable notification_tile_bg 0x0
 int drawable notify_panel_notification_icon_bg 0x0
 int drawable recommend 0x0
+int drawable return122 0x0
 int drawable return123 0x0
 int drawable search 0x0
 int drawable shouchang 0x0
@@ -1672,6 +1673,7 @@ int id textinput_helper_text 0x0
 int id time 0x0
 int id title 0x0
 int id titleDividerNoCustom 0x0
+int id title_collection 0x0
 int id title_template 0x0
 int id toolbar_info_content 0x0
 int id top 0x0
@@ -1751,7 +1753,9 @@ int layout abc_search_dropdown_item_icons_2line 0x0
 int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
+int layout activity_collection 0x0
 int layout activity_info_content 0x0
+int layout activity_post_info 0x0
 int layout activity_search 0x0
 int layout communication_fragment 0x0
 int layout custom_dialog 0x0

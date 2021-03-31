@@ -11,13 +11,25 @@
 9-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 10
 11    <application>
-11-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:5:5-8:19
-12        <activity android:name="com.example.user.activity.PersonalInformationActivity" />
-12-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:9-83
-12-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:19-71
-13        <activity android:name="com.example.user.activity.SettingsActivity" />
-13-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:9-63
-13-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:19-60
-14    </application>
-15
-16</manifest>
+11-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:5:5-13:19
+12        <activity
+12-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:9-7:70
+13            android:name="com.example.user.activity.PlayColletionActivity"
+13-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:19-65
+14            android:theme="@style/FavoritesActivityTheme" />
+14-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:13-58
+15        <activity
+15-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:8:9-10:61
+16            android:name="com.example.user.activity.FavoritesActivity"
+16-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:9:13-55
+17            android:theme="@style/FavoritesActivityTheme" />
+17-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:10:13-58
+18        <activity android:name="com.example.user.activity.PersonalInformationActivity" />
+18-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:11:9-74
+18-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:11:19-71
+19        <activity android:name="com.example.user.activity.SettingsActivity" />
+19-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:12:9-63
+19-->D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:12:19-60
+20    </application>
+21
+22</manifest>

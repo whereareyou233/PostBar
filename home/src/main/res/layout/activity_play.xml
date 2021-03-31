@@ -31,8 +31,104 @@
             android:text="保存"
             android:textSize="18sp"
             android:gravity="center"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="10dp"
             />
     </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/photo_play"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/material_play"/>
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/testbg"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/idname_play"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_play"
+            android:text="2021"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:gravity="right"/>
+        <TextView
+            android:id="@+id/name_play"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/image_play"
+            android:layout_centerInParent="true"
+            android:textColor="@color/cardview_light_background"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:text="美丽的湖泊      "/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0.2"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/shuiyin"/>
+    </RelativeLayout>
 
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp">
+    <LinearLayout
+        android:id="@+id/navigation_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#ca9D8AEA"
+       >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="边纹"
+            android:gravity="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="志号"
+            android:gravity="center"
+            android:id="@+id/bt_id"
+            android:textColor="@color/cardview_light_background"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/bt_openphoto_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="主图"
+            android:gravity="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/bt_mc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="名称"
+            android:gravity="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
 </LinearLayout>

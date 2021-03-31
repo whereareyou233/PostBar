@@ -9,6 +9,12 @@
         android:targetSdkVersion="30" />
 
     <application>
+        <activity
+            android:name="com.example.user.activity.PlayColletionActivity"
+            android:theme="@style/FavoritesActivityTheme" />
+        <activity
+            android:name="com.example.user.activity.FavoritesActivity"
+            android:theme="@style/FavoritesActivityTheme" />
         <activity android:name="com.example.user.activity.PersonalInformationActivity" />
         <activity android:name="com.example.user.activity.SettingsActivity" />
     </application>

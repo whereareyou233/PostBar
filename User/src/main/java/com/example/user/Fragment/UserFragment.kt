@@ -9,11 +9,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.home.Util.GlideEngine
 import com.example.user.R
 import com.example.user.VM.UserViewModel
+import com.example.user.activity.FavoritesActivity
 import com.example.user.activity.PersonalInformationActivity
+import com.example.user.activity.PlayColletionActivity
 import com.example.user.activity.SettingsActivity
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.config.PictureMimeType
@@ -50,6 +53,14 @@ class UserFragment : Fragment() {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context?.startActivity(intent)
         }
+        bt_mylove_user.setOnClickListener {val intent=Intent(context,FavoritesActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        context?.startActivity(intent)}
+        bt_myplay_user.setOnClickListener { val intent=Intent(context,PlayColletionActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context?.startActivity(intent) }
+        bt_mypost_user.setOnClickListener { Toast.makeText(context,"开发者正在连夜赶制...",Toast.LENGTH_SHORT).show() }
+        bt_mytool_user.setOnClickListener { Toast.makeText(context,"开发者正在连夜赶制...",Toast.LENGTH_SHORT).show() }
     }
 
 

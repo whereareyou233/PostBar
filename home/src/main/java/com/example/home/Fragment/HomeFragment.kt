@@ -16,14 +16,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.addTextChangedListener
 import com.bumptech.glide.Glide
+import com.example.common.net.RemoteProvider
+import com.example.home.Bean.postInfobean
+import com.example.home.Bean.postbean
 import com.example.home.VM.HomeViewModel
 import com.example.home.R
 import com.example.home.Util.GlideEngine
 import com.example.home.activity.*
+import com.example.home.api.homeapi
+import com.google.gson.Gson
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.config.PictureMimeType
 import kotlinx.android.synthetic.main.home_fragment.*
 import kotlinx.android.synthetic.main.home_fragment.view.*
+import okhttp3.MediaType
+import okhttp3.RequestBody
+import org.json.JSONObject
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
 import java.io.FileInputStream
@@ -97,6 +108,39 @@ class HomeFragment : Fragment() {
                 val byte =os.toByteArray()
                 val base=Base64.encodeToString(byte,Base64.DEFAULT)
 
+            val parm =JSONObject()
+            parm.put("image",base)
+            parm.put("top_num",1)
+            val requestBody = RequestBody.create(MediaType.parse("application/json"),
+                    parm.toString())
+
+RemoteProvider.create(homeapi::class.java)
+    .getPostInfo("24.ffa9fa286034c766879c584ae7be2128.2592000.1619618196.282335-23895106",requestBody)
+    .enqueue(object: Callback<postInfobean> {
+        override fun onResponse(
+            call: Call<postInfobean>,
+            response: Response<postInfobean>
+        ) {
+            val list=response.body()
+            if (list!=null)
+            {
+                Log.d("test123",list.results[0].name)
+            }
+            else
+            {
+                Log.d("test123","请求成功但无返回")
+            }
+        }
+
+        override fun onFailure(call: Call<postInfobean>, t: Throwable) {
+            t.printStackTrace()
+            Log.d("test123",t.toString())
+
+        }
+
+
+    }
+    )
 
             //将base64转化为图片
 /*

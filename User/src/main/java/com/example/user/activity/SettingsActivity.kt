@@ -24,5 +24,7 @@ class SettingsActivity : AppCompatActivity() {
             val intent= Intent(this,PersonalInformationActivity::class.java)
             this.startActivity(intent)
         }
+        bt_favorites_setting.setOnClickListener {val intent=Intent(this,FavoritesActivity::class.java)
+            this.startActivity(intent)}
     }
 }

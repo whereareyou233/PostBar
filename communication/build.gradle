@@ -50,5 +50,6 @@ dependencies {
 
     //图片轮播
     compile 'com.youth.banner:banner:2.1.0'
+    implementation project(":common")
 
 }

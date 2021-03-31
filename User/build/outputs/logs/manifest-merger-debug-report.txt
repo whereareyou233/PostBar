@@ -1,36 +1,48 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
-INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
 	package
 		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
-		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
-		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-10:12
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:1-15:12
 		INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:5:5-8:19
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:5:5-13:19
+activity#com.example.user.activity.PlayColletionActivity
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:9-7:70
+	android:theme
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:13-58
+	android:name
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:19-65
+activity#com.example.user.activity.FavoritesActivity
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:8:9-10:61
+	android:theme
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:10:13-58
+	android:name
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:9:13-55
 activity#com.example.user.activity.PersonalInformationActivity
-ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:9-83
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:11:9-74
 	android:name
-		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:6:19-71
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:11:19-71
 activity#com.example.user.activity.SettingsActivity
-ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:9-63
+ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:12:9-63
 	android:name
-		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:7:19-60
+		ADDED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml:12:19-60
 uses-sdk
 INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\MyAndroidProjects\PostBar\User\src\main\AndroidManifest.xml

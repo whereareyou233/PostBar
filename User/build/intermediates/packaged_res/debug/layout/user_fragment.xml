@@ -157,6 +157,7 @@
            android:orientation="horizontal">
 
            <LinearLayout
+               android:id="@+id/bt_mylove_user"
                android:layout_width="0dp"
                android:layout_height="match_parent"
                android:layout_weight="1"
@@ -174,6 +175,7 @@
                    android:gravity="center"/>
            </LinearLayout>
            <LinearLayout
+               android:id="@+id/bt_myplay_user"
                android:layout_width="0dp"
                android:layout_height="match_parent"
                android:layout_weight="1"
@@ -191,6 +193,7 @@
                    android:gravity="center"/>
            </LinearLayout>
            <LinearLayout
+               android:id="@+id/bt_mypost_user"
                android:layout_width="0dp"
                android:layout_height="match_parent"
                android:layout_weight="1"
@@ -210,6 +213,7 @@
                    android:gravity="center"/>
            </LinearLayout>
            <LinearLayout
+               android:id="@+id/bt_mytool_user"
                android:layout_width="0dp"
                android:layout_height="match_parent"
                android:layout_weight="1"
