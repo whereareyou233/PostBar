@@ -14,30 +14,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.addTextChangedListener
-import com.bumptech.glide.Glide
+import android.widget.Toast
+
+import com.example.common.activity.PostInfoActivity
+import com.example.common.dialog.LoadingDialog
 import com.example.common.net.RemoteProvider
 import com.example.home.Bean.postInfobean
-import com.example.home.Bean.postbean
 import com.example.home.VM.HomeViewModel
 import com.example.home.R
 import com.example.home.Util.GlideEngine
 import com.example.home.activity.*
 import com.example.home.api.homeapi
-import com.google.gson.Gson
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.config.PictureMimeType
 import kotlinx.android.synthetic.main.home_fragment.*
-import kotlinx.android.synthetic.main.home_fragment.view.*
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
-import java.io.FileInputStream
 
 class HomeFragment : Fragment() {
 
@@ -98,13 +95,19 @@ class HomeFragment : Fragment() {
     //结果回调
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+        val loadBuilder= LoadingDialog.Builder(context)
+            .setMessage("小邮正在奋力分析中...")
+            .setCancelable(true)//返回键是否可点击
+            .setCancelOutside(false)//窗体外是否可点击
+       val dialog = loadBuilder.create()
+
         if (requestCode == REQUEST_CODE_CHOOSE && resultCode == Activity.RESULT_OK) {
             val results = PictureSelector.obtainMultipleResult(data)
-
+            dialog.show()
             //将图片转化为base64
               val bitmap =getBitmapFromUrl(Uri.parse(results[0].path))
                 val  os= ByteArrayOutputStream()
-                bitmap?.compress(Bitmap.CompressFormat.PNG,100,os)
+                bitmap?.compress(Bitmap.CompressFormat.PNG,10,os)
                 val byte =os.toByteArray()
                 val base=Base64.encodeToString(byte,Base64.DEFAULT)
 
@@ -121,10 +124,23 @@ RemoteProvider.create(homeapi::class.java)
             call: Call<postInfobean>,
             response: Response<postInfobean>
         ) {
+            dialog.dismiss()
             val list=response.body()
-            if (list!=null)
+            if (list.results!=null)
+
             {
-                Log.d("test123",list.results[0].name)
+                val id=list.results[0].name
+
+                if (id!=null){
+                val intent=Intent(context,PostInfoActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.putExtra("post",id)
+                context?.startActivity(intent)
+                            }else
+                {
+                    Toast.makeText(context,"未能识别该邮票或者出错！",Toast.LENGTH_SHORT).show()
+                }
+
             }
             else
             {

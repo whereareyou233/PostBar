@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 drawable approval
 drawable delete
+drawable p00000
 drawable recommend
 drawable return123
 drawable search

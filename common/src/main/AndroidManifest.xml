@@ -3,7 +3,8 @@
     package="com.example.common">
 <uses-permission android:name="android.permission.INTERNET" />
     <application>
-        <activity android:name=".activity.PostInfoActivity"></activity>
+        <activity android:name=".activity.PostInfoActivity"
+            android:theme="@style/PostInfoActivityTheme"></activity>
         <activity android:name=".activity.CollectionActivity" />
     </application>
 

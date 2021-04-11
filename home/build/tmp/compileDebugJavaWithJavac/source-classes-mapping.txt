@@ -1,7 +1,7 @@
+com/example/home/BuildConfig.java
+ com.example.home.BuildConfig
 com/example/home/Util/GlideEngine.java
  com.example.home.Util.GlideEngine
  com.example.home.Util.GlideEngine$1
  com.example.home.Util.GlideEngine$2
  com.example.home.Util.GlideEngine$3
-com/example/home/BuildConfig.java
- com.example.home.BuildConfig

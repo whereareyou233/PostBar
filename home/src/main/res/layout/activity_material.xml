@@ -4,11 +4,11 @@
    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F7B5BD"
    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-   android:background="#F7B5BD"
         android:orientation="horizontal">
 
         <ImageView
@@ -27,9 +27,17 @@
             android:textSize="18sp"
             android:gravity="center"/>
     </LinearLayout>
-    <TextView
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F7B5BD"/>
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_material"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"/>
+</androidx.cardview.widget.CardView>
 </LinearLayout>
