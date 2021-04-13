@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.example.common.activity.StampCollectionActivity
 import com.example.home.Util.GlideEngine
 import com.example.user.R
 import com.example.user.VM.UserViewModel
@@ -59,7 +60,12 @@ class UserFragment : Fragment() {
         bt_myplay_user.setOnClickListener { val intent=Intent(context,PlayColletionActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context?.startActivity(intent) }
-        bt_mypost_user.setOnClickListener { Toast.makeText(context,"开发者正在连夜赶制...",Toast.LENGTH_SHORT).show() }
+        bt_mypost_user.setOnClickListener {
+            val intent=Intent(context,StampCollectionActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.putExtra("source","UserFragment")
+            context?.startActivity(intent)
+        }
         bt_mytool_user.setOnClickListener { Toast.makeText(context,"开发者正在连夜赶制...",Toast.LENGTH_SHORT).show() }
     }
 

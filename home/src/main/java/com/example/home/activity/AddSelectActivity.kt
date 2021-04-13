@@ -3,12 +3,14 @@ package com.example.home.activity
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Interpolator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
+import com.example.common.activity.StampCollectionActivity
 import com.example.home.R
 import kotlinx.android.synthetic.main.activity_add_select.*
 
@@ -24,6 +26,11 @@ class AddSelectActivity : AppCompatActivity() {
         //点击事件
         bt_return_add.setOnClickListener { finish()}
         add_new.setOnClickListener { shownewpost() }
+        bt_old.setOnClickListener{
+            val intent = Intent(this,StampCollectionActivity::class.java)
+            intent.putExtra("source","AddSelectActivity")
+            startActivity(intent)
+        }
 
     }
 

@@ -1386,6 +1386,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nocontent
 drawable noimages
 drawable notification_action_background
 drawable notification_bg
@@ -1615,6 +1616,7 @@ id recycler_search
 id recyclerview_community
 id recyler_searchhistory
 id return_info
+id return_stampcollection
 id right
 id right_icon
 id right_side
@@ -1765,9 +1767,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_collection
+layout activity_content
 layout activity_info_content
 layout activity_post_info
 layout activity_search
+layout activity_stamp_collection
 layout communication_fragment
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2217,6 +2221,7 @@ style ShapeAppearance_MaterialComponents_LargeComponent
 style ShapeAppearance_MaterialComponents_MediumComponent
 style ShapeAppearance_MaterialComponents_SmallComponent
 style ShapeAppearance_MaterialComponents_Test
+style StampCollectionActivityTheme
 style TestStyleWithLineHeight
 style TestStyleWithLineHeightAppearance
 style TestStyleWithThemeLineHeightAttribute

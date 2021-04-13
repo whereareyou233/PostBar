@@ -1,14 +1,14 @@
-package com.example.communication.activity
+package com.example.common.activity
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import com.example.communication.R
-import kotlinx.android.synthetic.main.activity_info_content.*
+import com.example.common.R
+import kotlinx.android.synthetic.main.activity_content.*
 
-class InfoContentActivity : AppCompatActivity() {
+class ContentActivity : AppCompatActivity() {
 
     companion object{
         const val INFO_IMAGE="info_image"
@@ -16,14 +16,18 @@ class InfoContentActivity : AppCompatActivity() {
         const val INFO_NAME="info_name"
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_info_content)
+        setContentView(R.layout.activity_content)
 
         val Info_text=intent.getStringExtra(INFO_TEXT) ?: " "
         val Info_image=intent.getIntExtra(INFO_IMAGE,0)
         val Info_name=intent.getStringExtra(INFO_NAME) ?: " "
 
+        info_text.text=Info_text
+        info_title.text=Info_name
+        image_info_content.setImageResource(Info_image)
 
         //浸入式状态栏
         val decorView =window.decorView
@@ -31,15 +35,12 @@ class InfoContentActivity : AppCompatActivity() {
         window.statusBarColor= Color.TRANSPARENT
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR)
 
-        //toolbar
+//toolbar
         setSupportActionBar(toolbar_info_content)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbar_info_content.title="详情"
-        info_text.setText(Info_text)
-        image_info_content.setImageResource(Info_image)
-        info_title.text=Info_name
-    }
 
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             android.R.id.home->{

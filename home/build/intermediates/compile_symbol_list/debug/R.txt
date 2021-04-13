@@ -1570,6 +1570,7 @@ int drawable mtrl_popupmenu_background 0x0
 int drawable mtrl_popupmenu_background_dark 0x0
 int drawable mtrl_tabs_default_indicator 0x0
 int drawable navigation_empty_icon 0x0
+int drawable nocontent 0x0
 int drawable noimages 0x0
 int drawable notification_action_background 0x0
 int drawable notification_bg 0x0
@@ -2030,6 +2031,7 @@ int id recyler_searchhistory 0x0
 int id return_info 0x0
 int id return_material 0x0
 int id return_play 0x0
+int id return_stampcollection 0x0
 int id right 0x0
 int id right_icon 0x0
 int id right_side 0x0
@@ -2242,12 +2244,14 @@ int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
 int layout activity_add_select 0x0
 int layout activity_collection 0x0
+int layout activity_content 0x0
 int layout activity_info_content 0x0
 int layout activity_material 0x0
 int layout activity_play 0x0
 int layout activity_post_info 0x0
 int layout activity_search 0x0
 int layout activity_search_home 0x0
+int layout activity_stamp_collection 0x0
 int layout activity_story 0x0
 int layout communication_fragment 0x0
 int layout custom_dialog 0x0
@@ -2834,6 +2838,7 @@ int style ShapeAppearance_MaterialComponents_LargeComponent 0x0
 int style ShapeAppearance_MaterialComponents_MediumComponent 0x0
 int style ShapeAppearance_MaterialComponents_SmallComponent 0x0
 int style ShapeAppearance_MaterialComponents_Test 0x0
+int style StampCollectionActivityTheme 0x0
 int style StoryActivityTheme 0x0
 int style TestStyleWithLineHeight 0x0
 int style TestStyleWithLineHeightAppearance 0x0

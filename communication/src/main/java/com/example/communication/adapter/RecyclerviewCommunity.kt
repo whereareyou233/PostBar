@@ -29,6 +29,7 @@ class RecyclerviewCommunity (val context: Context,val List :List<RealTimeInfo>):
             val intent=Intent(context,InfoContentActivity::class.java).apply {
                 putExtra(InfoContentActivity.INFO_IMAGE,content.image)
                 putExtra(InfoContentActivity.INFO_TEXT,content.text)
+                putExtra(InfoContentActivity.INFO_NAME,content.name)
             }
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context?.startActivity(intent)
