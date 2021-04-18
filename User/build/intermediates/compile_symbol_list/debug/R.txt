@@ -1521,6 +1521,7 @@ int drawable abc_textfield_search_default_mtrl_alpha 0x0
 int drawable abc_textfield_search_material 0x0
 int drawable abc_vector_test 0x0
 int drawable add 0x0
+int drawable add1 0x0
 int drawable amhg 0x0
 int drawable approval 0x0
 int drawable avd_hide_password 0x0
@@ -1828,6 +1829,7 @@ int id actions 0x0
 int id activity_chooser_view_content 0x0
 int id add 0x0
 int id add_new 0x0
+int id add_post 0x0
 int id alertTitle 0x0
 int id async 0x0
 int id auto 0x0
@@ -1931,6 +1933,7 @@ int id fillEnd 0x0
 int id fillStart 0x0
 int id filled 0x0
 int id filter_chip 0x0
+int id finish_add_new 0x0
 int id first_image 0x0
 int id fitCenter 0x0
 int id fitEnd 0x0
@@ -2039,6 +2042,7 @@ int id name_play 0x0
 int id name_user 0x0
 int id navigation_header_container 0x0
 int id navigation_play 0x0
+int id nocontent 0x0
 int id none 0x0
 int id normal 0x0
 int id notification_background 0x0
@@ -2047,12 +2051,15 @@ int id notification_main_column_container 0x0
 int id off 0x0
 int id on 0x0
 int id outline 0x0
+int id p_image 0x0
 int id packed 0x0
 int id parallax 0x0
 int id parent 0x0
 int id parentPanel 0x0
 int id parent_matrix 0x0
 int id password_toggle 0x0
+int id pc_image 0x0
+int id pc_name 0x0
 int id percent 0x0
 int id performance 0x0
 int id photo_play 0x0
@@ -2076,10 +2083,13 @@ int id progress_circular 0x0
 int id progress_horizontal 0x0
 int id radio 0x0
 int id recycler_search 0x0
+int id recyclerview 0x0
 int id recyclerview_community 0x0
 int id recyclerview_home_story 0x0
 int id recyclerview_home_story_2 0x0
 int id recyler_searchhistory 0x0
+int id return_add_new 0x0
+int id return_collection 0x0
 int id return_info 0x0
 int id return_material 0x0
 int id return_play 0x0
@@ -2296,6 +2306,7 @@ int layout abc_search_dropdown_item_icons_2line 0x0
 int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
+int layout activity_add_new 0x0
 int layout activity_add_select 0x0
 int layout activity_collection 0x0
 int layout activity_content 0x0
@@ -2336,6 +2347,8 @@ int layout dialog_newpost 0x0
 int layout dialog_signature_user 0x0
 int layout home_fragment 0x0
 int layout item_material_list 0x0
+int layout item_post 0x0
+int layout item_postcollection 0x0
 int layout item_recycler_community 0x0
 int layout item_recycler_community_tow 0x0
 int layout item_story_2 0x0

@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
+import com.example.common.activity.AddNewActivity
 import com.example.common.activity.StampCollectionActivity
 import com.example.home.R
 import kotlinx.android.synthetic.main.activity_add_select.*
@@ -25,7 +26,8 @@ class AddSelectActivity : AppCompatActivity() {
 
         //点击事件
         bt_return_add.setOnClickListener { finish()}
-        add_new.setOnClickListener { shownewpost() }
+        add_new.setOnClickListener { val intent=Intent(this,AddNewActivity::class.java)
+        startActivity(intent)}
         bt_old.setOnClickListener{
             val intent = Intent(this,StampCollectionActivity::class.java)
             intent.putExtra("source","AddSelectActivity")
@@ -34,7 +36,7 @@ class AddSelectActivity : AppCompatActivity() {
 
     }
 
-    private fun shownewpost(){
+   /* private fun shownewpost(){
         val dialog = Dialog(this, R.style.DialogTheme)//设置style
         val view= View.inflate(this, R.layout.dialog_newpost, null)//设置布局
         dialog.setContentView(view)
@@ -47,5 +49,5 @@ class AddSelectActivity : AppCompatActivity() {
         dialog.cancel.setOnClickListener {  dialog.dismiss()}
         dialog.define.setOnClickListener {
             dialog.dismiss()}
-    }
+    }*/
 }

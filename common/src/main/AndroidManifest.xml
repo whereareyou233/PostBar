@@ -5,13 +5,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application>
-        <activity android:name=".activity.StampCollectionActivity"
+        <activity android:name=".activity.AddNewActivity"
             android:theme="@style/StampCollectionActivityTheme"></activity>
-        <activity android:name=".activity.ContentActivity" />
+        <activity
+            android:name=".activity.StampCollectionActivity"
+            android:theme="@style/StampCollectionActivityTheme" />
+        <activity android:name=".activity.ContentActivity"
+            />
         <activity
             android:name=".activity.PostInfoActivity"
             android:theme="@style/PostInfoActivityTheme" />
-        <activity android:name=".activity.CollectionActivity" />
+        <activity android:name=".activity.CollectionActivity"
+            android:theme="@style/StampCollectionActivityTheme"/>
     </application>
 
 </manifest>

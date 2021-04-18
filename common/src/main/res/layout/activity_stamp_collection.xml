@@ -37,13 +37,16 @@
             android:textColor="#ca9D8AEA"/>
     </LinearLayout>
     <ImageView
+        android:id="@+id/nocontent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/nocontent"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:visibility="gone"/>
 
 </LinearLayout>

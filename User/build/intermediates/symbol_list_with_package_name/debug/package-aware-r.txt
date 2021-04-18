@@ -1522,6 +1522,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable add1
 drawable amhg
 drawable approval
 drawable avd_hide_password
@@ -1829,6 +1830,7 @@ id actions
 id activity_chooser_view_content
 id add
 id add_new
+id add_post
 id alertTitle
 id async
 id auto
@@ -1932,6 +1934,7 @@ id fillEnd
 id fillStart
 id filled
 id filter_chip
+id finish_add_new
 id first_image
 id fitCenter
 id fitEnd
@@ -2040,6 +2043,7 @@ id name_play
 id name_user
 id navigation_header_container
 id navigation_play
+id nocontent
 id none
 id normal
 id notification_background
@@ -2048,12 +2052,15 @@ id notification_main_column_container
 id off
 id on
 id outline
+id p_image
 id packed
 id parallax
 id parent
 id parentPanel
 id parent_matrix
 id password_toggle
+id pc_image
+id pc_name
 id percent
 id performance
 id photo_play
@@ -2077,10 +2084,13 @@ id progress_circular
 id progress_horizontal
 id radio
 id recycler_search
+id recyclerview
 id recyclerview_community
 id recyclerview_home_story
 id recyclerview_home_story_2
 id recyler_searchhistory
+id return_add_new
+id return_collection
 id return_info
 id return_material
 id return_play
@@ -2297,6 +2307,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_new
 layout activity_add_select
 layout activity_collection
 layout activity_content
@@ -2337,6 +2348,8 @@ layout dialog_newpost
 layout dialog_signature_user
 layout home_fragment
 layout item_material_list
+layout item_post
+layout item_postcollection
 layout item_recycler_community
 layout item_recycler_community_tow
 layout item_story_2
