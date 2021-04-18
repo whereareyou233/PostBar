@@ -20,29 +20,61 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:src="@drawable/return122"
+            android:src="@drawable/return121"
             android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="详情"/>
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/post_image"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/noimages"
+        android:src="@drawable/zmlmf"
         android:layout_margin="20dp"/>
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:layout_margin="5dp"
+    android:text="名称："/>
     <TextView
         android:id="@+id/post_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="5dp"
         android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="面值： 1.2元人民币"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相关介绍："
+        android:textSize="18sp"
+        android:layout_margin="5dp"
         android:textStyle="bold"/>
     <TextView
         android:id="@+id/post_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:text="    《中国登山队登顶珠峰六十周年》纪念邮票主体以插画的形式表现，画面以雄伟的珠穆朗玛峰为背景，前景表现我国登山队员克服艰难险阻向珠峰挺进的情景，画面中还设计了国旗元素，整体画面磅礴大气，色彩丰富，富有时代特征，充分展示出中国登山队勇攀高峰的拼搏精神，展现了人类第一次从珠峰北坡成功登顶珠峰的伟大壮举。"
         />
 
 </LinearLayout>
