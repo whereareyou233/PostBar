@@ -13,7 +13,7 @@ import com.example.common.Dao.PlayDao
 import com.example.common.Dao.PostCollectionDao
 import com.example.common.Dao.PostDao
 
-@Database(version = 1,entities = [Post::class,Play::class,Collection::class,PostCollection::class ])
+@Database(version = 1,entities = [Post::class,Play::class,Collection::class,PostCollection::class ], exportSchema = false)
 abstract class AppDatabase:RoomDatabase(){
     abstract fun postDao():PostDao
     abstract fun collectionDao():CollectionDao

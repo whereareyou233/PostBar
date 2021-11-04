@@ -1714,6 +1714,7 @@ drawable return123
 drawable return2
 drawable search
 drawable setting1
+drawable shoes
 drawable shouchang
 drawable shuiyin
 drawable story
@@ -1893,6 +1894,7 @@ id chip
 id chip_group
 id chronometer
 id clear_text
+id collection_size
 id compatible
 id confirm_button
 id confirm_name
@@ -2077,6 +2079,7 @@ id pin
 id post_content
 id post_id
 id post_image
+id post_size
 id preview_image
 id preview_pager
 id progressBar1

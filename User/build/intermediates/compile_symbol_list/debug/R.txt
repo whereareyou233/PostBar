@@ -1713,6 +1713,7 @@ int drawable return123 0x0
 int drawable return2 0x0
 int drawable search 0x0
 int drawable setting1 0x0
+int drawable shoes 0x0
 int drawable shouchang 0x0
 int drawable shuiyin 0x0
 int drawable story 0x0
@@ -1892,6 +1893,7 @@ int id chip 0x0
 int id chip_group 0x0
 int id chronometer 0x0
 int id clear_text 0x0
+int id collection_size 0x0
 int id compatible 0x0
 int id confirm_button 0x0
 int id confirm_name 0x0
@@ -2076,6 +2078,7 @@ int id pin 0x0
 int id post_content 0x0
 int id post_id 0x0
 int id post_image 0x0
+int id post_size 0x0
 int id preview_image 0x0
 int id preview_pager 0x0
 int id progressBar1 0x0

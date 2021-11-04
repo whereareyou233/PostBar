@@ -10,19 +10,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
+import com.example.common.DataBase.AppDatabase
 import com.example.common.activity.StampCollectionActivity
 import com.example.home.Util.GlideEngine
 import com.example.user.R
 import com.example.user.VM.UserViewModel
 import com.example.user.activity.FavoritesActivity
-import com.example.user.activity.PersonalInformationActivity
 import com.example.user.activity.PlayColletionActivity
 import com.example.user.activity.SettingsActivity
 import com.luck.picture.lib.PictureSelector
 import com.luck.picture.lib.config.PictureMimeType
-import kotlinx.android.synthetic.main.activity_personal_information.*
 import kotlinx.android.synthetic.main.user_fragment.*
+import com.example.common.Dao.*
+import kotlin.concurrent.thread
 
 class UserFragment : Fragment() {
 
@@ -33,7 +36,11 @@ class UserFragment : Fragment() {
     }
 
     private lateinit var viewModel: UserViewModel
-
+    //
+    val postcollection = context?.let { AppDatabase.getDatabase(it).postCollectionDao() }
+    val post = context?.let { AppDatabase.getDatabase(it).postDao() }
+    var size= MutableLiveData<Int>()
+    var postsize=MutableLiveData<Int>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -67,7 +74,29 @@ class UserFragment : Fragment() {
             context?.startActivity(intent)
         }
         bt_mytool_user.setOnClickListener { Toast.makeText(context,"开发者正在连夜赶制...",Toast.LENGTH_SHORT).show() }
+
+        val postcollection = context?.let { AppDatabase.getDatabase(it).postCollectionDao() }
+        val post = context?.let { AppDatabase.getDatabase(it).postDao() }
+thread { val list=postcollection?.AllPC()
+    if (list != null) {
+        size.postValue(list.size)
     }
+    val postlist=post?.AllP()
+    if (postlist != null) {
+        postsize.postValue(postlist.size)
+    }
+}
+
+        size.observe(this, Observer {
+            collection_size.text=it.toString()
+        })
+        postsize.observe(this, Observer {
+            post_size.text=it.toString()
+        })
+
+    }
+
+
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

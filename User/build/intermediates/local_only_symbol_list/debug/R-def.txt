@@ -11,6 +11,7 @@ drawable play
 drawable post
 drawable return2
 drawable setting1
+drawable shoes
 drawable works
 id bt_favorites_setting
 id bt_head
@@ -26,6 +27,7 @@ id bt_return_settings
 id bt_signature
 id cancel_name
 id cancel_signature
+id collection_size
 id confirm_name
 id confirm_signature
 id edit_name
@@ -34,6 +36,7 @@ id head_user
 id head_user_fragment
 id into_infomation
 id name_user
+id post_size
 id setting
 id signature_user
 layout activity_favorites
